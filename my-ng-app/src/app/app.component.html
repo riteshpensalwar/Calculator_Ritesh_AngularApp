@@ -19,11 +19,45 @@
   <input type="button" value="Click Me Again" (click)="displayParameter($event)">
 </div>
 <br>
-<div class="container">
-  <input type="text" class="form-control" [(ngModel)]="fullName">
-  <br>
-  <input type="text" class="form-control" [(ngModel)]="fullName">
-  <br>
-  <input type="text" class="form-control" [(ngModel)]="fullName">
-  <h2>{{fullName}}</h2>
+<div class="header">
+  <h6>Calculater</h6>
 </div>
+<div class="container">
+<table class="table table-bordered center">
+  <tbody>
+    <tr>
+      <td colspan="4"><input style="text-align:right;" type="text" [value]= "result" pattern="[0-9]+"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="7" class="btn btn-primary" (click)= "buttonClick($event)"></td>
+      
+      
+         <td><input type="button" value="8" class="btn btn-primary" (click)= "buttonClick($event)"></td>
+      <td><input type="button" value="9" class="btn btn-primary" (click)= "buttonClick($event)"></td>
+      <td><input type="button" value="+" class="btn btn-primary" (click)= "setOperator($event)"></td>        
+    </tr>
+    <tr>
+      <td><input type="button" value="4" class="btn btn-primary" (click)= "buttonClick($event)"></td>
+      <td><input type="button" value="5" class="btn btn-primary" (click)= "buttonClick($event)"></td>
+      <td><input type="button" value="6" class="btn btn-primary" (click)= "buttonClick($event)"></td>
+      <td><input type="button" value="-" class="btn btn-primary" (click)= "setOperator($event)"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="1" class="btn btn-primary" (click)= "buttonClick($event)"></td>
+      <td><input type="button" value="2" class="btn btn-primary" (click)= "buttonClick($event)"></td>
+      <td><input type="button" value="3" class="btn btn-primary"(click)= "buttonClick($event)"></td>
+      <td><input type="button" value="*" class="btn btn-primary" (click)= "setOperator($event)"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="0" class="btn btn-primary"></td>
+      <td><input type="button" value="C" class="btn btn-primary" (click)="clear()"></td>
+      <td ><input type="button" value="=" class="btn btn-primary" (click) ="equalTo()" ></td>
+      <td><input type="button" value="/" class="btn btn-primary" (click)= "setOperator($event)"></td>
+      
+    </tr>
+  </tbody>
+</table>
+</div>
+
+ 
+

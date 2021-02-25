@@ -1,0 +1,14 @@
+https://github.com/maheshsabnis/compucomng.git
+
+http://static.infragistics.com/marketing/Website/Ignite-UI/Angular-Essentials/angularessentials.pdf
+
+For Cloning
+C:\Ritesh\Angular_Training\Day2>git clone https://github.com/maheshsabnis/compucomng.git
+
+C:\Ritesh\Angular_Training\Day2>cd compucomng
+
+C:\Ritesh\Angular_Training\Day2\compucomng>cd my-ng-app
+
+C:\Ritesh\Angular_Training\Day2\compucomng\my-ng-app>npm install
+
+to open VS code from Command propmt use => "code ." 
